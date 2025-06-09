@@ -1,5 +1,5 @@
 /*
-COMENTAROS
+COMENTARIOS
 */
 
 -- Este es un comentario en una lína
