@@ -1,9 +1,12 @@
 /*
 SELECT
-Lección 8: https://youtu.be/OuJerKzV5T0?t=5618
+Selecciona o extrae las caracteristicas de una base de datos
+SELECT carac1,carac2,... FROM tabla
 */
 
--- Obtiene todos los datos de la tabla "users"
+-- Las palabras reservadas de SQL se usan en mayusculas
+
+-- Al usar * obtenemos todos los datos de la tabla "users"
 SELECT * FROM users;
 
 -- Obtiene todos los nombres de la tabla "users"
