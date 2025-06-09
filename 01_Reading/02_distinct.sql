@@ -1,6 +1,7 @@
 /*
 DISTINCT
-Lección 9.1: https://youtu.be/OuJerKzV5T0?t=6089
+Selecciona solo los datos diferentes entre si de una caracteristica
+SELECT DISTINCT carac1,carac2,... FROM tabla
 */
 
 -- Obtiene todos los datos distintos entre sí de la tabla "users"
