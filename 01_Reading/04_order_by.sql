@@ -1,6 +1,7 @@
 /*
 ORDER BY
-Lección 9.3: https://youtu.be/OuJerKzV5T0?t=6592
+Ordena los datos segun una caracteristica de manera creciente o decreciente
+SELECT carac1,carac2,... FROM tabla ORDER BY caracteristica ASC|DESC
 */
 
 -- Ordena todos los datos de la tabla "users" por edad (ascendente por defecto)
