@@ -1,6 +1,8 @@
 /*
 ALIAS
-Lección 10.9: https://youtu.be/OuJerKzV5T0?t=8667
+Se utiliza para dar un nombre temporal a un atributo para que sea mas
+entendible. Este alias solo existe mientras dure esa consulta
+SELECT carac1 AS 'alias1', carac2 AS 'alias2' FROM users
 */
 
 -- Establece el alias 'Fecha de inicio en programación' a la columna init_date
