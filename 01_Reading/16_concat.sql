@@ -1,6 +1,7 @@
 /*
 CONCAT
-Lección 10.10: https://youtu.be/OuJerKzV5T0?t=8826
+Sirve para concatenar dos o mas cadenas de texto en una sola columna
+SELECT CONCAT(cadena1+cadena+...) AS 'alias' FROM users
 */
 
 -- Concatena en una sola columa los campos nombre y apellido
