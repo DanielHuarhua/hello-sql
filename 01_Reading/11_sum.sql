@@ -1,6 +1,7 @@
 /*
 SUM
-Lección 10.5: https://youtu.be/OuJerKzV5T0?t=8128
+Devuelve la suma total de una columna numerica
+SELECT SUM(atributo) FROM tabla
 */
 
 -- Suma todos los valores del campo edad de la tabla "users"
