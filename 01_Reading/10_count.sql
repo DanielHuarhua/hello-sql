@@ -1,6 +1,7 @@
 /*
 COUNT
 Encuentra el total de elementos no nulos de un mismo atributo
+SELECT COUNT(atributo) FROM tabla
 */
 
 -- Cuenta cuantas filas contiene la tabla "users"
