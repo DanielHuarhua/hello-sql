@@ -1,6 +1,10 @@
 /*
 NOT, AND, OR
-Lección 9.5: https://youtu.be/OuJerKzV5T0?t=7194
+Operadores Logicos
+NOT: Negacion
+AND: Tiene que cumplirse todas las condiciones
+OR: Basta que cumpla al menos una condicion
+SELECT carac1,carac2,... FROM tabla WHERE condicion 1 AND|OR condicion 2 ...
 */
 
 -- Obtiene todos datos de la tabla "users" con email distinto a sara@gmail.com
