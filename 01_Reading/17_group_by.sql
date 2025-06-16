@@ -1,6 +1,8 @@
 /*
 GROUP BY
-Lección 10.11: https://youtu.be/OuJerKzV5T0?t=8960
+Permite agrupar los resultados de una consulta segun un atributo y puedo usar funciones
+de agregacion (suma,avg,count)
+SELECT atributo,Func.Agreg(atributo) FROM tabla GROUP BY atributo
 */
 
 -- Agrupa los resultados por edad diferente
@@ -8,6 +10,7 @@ SELECT MAX(age) FROM users GROUP BY age
 
 -- Agrupa los resultados por edad diferente y cuenta cuantos registros existen de cada una
 SELECT COUNT(age), age FROM users GROUP BY age
+-- Hacemos grupos por edades, y mostramos que edad tienen cada grupo y cuantos con la misma edad hay
 
 -- Agrupa los resultados por edad diferente, cuenta cuantos registros existen de cada una y los ordena
 SELECT COUNT(age), age FROM users GROUP BY age ORDER BY age ASC
