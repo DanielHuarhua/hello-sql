@@ -1,6 +1,7 @@
 /*
 MIN, MAX
-Lección 10.3: https://youtu.be/OuJerKzV5T0?t=7834
+Retorna el valor mas grande o mas pequeño de una columna
+SELECT MIN(columna)|MAX(columna) FROM tabla WHERE condicion
 */
 
 -- Obtiene el valor menor del campo edad de la tabla "users"
