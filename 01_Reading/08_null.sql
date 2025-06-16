@@ -1,6 +1,8 @@
 /*
 NULL
-Lección 10.2: https://youtu.be/OuJerKzV5T0?t=7615
+Es un campo sin valor, es aquel que se dejo en blanco durante la creacion del registro
+Los valores nulos no son comparables
+En su lugar se usa IS NULL o IS NOT NULL
 */
 
 -- Obtiene todos datos de la tabla "users" de la tabla "users" con email nulo
