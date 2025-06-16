@@ -1,6 +1,7 @@
 /*
 LIMIT
-Lección 9.6: https://youtu.be/OuJerKzV5T0?t=7395
+Restringe la cantidad de resultados que retorna la consulta
+SELECT column1,column2,... FROM tabla LIMIT #registros
 */
 
 -- Obtiene las 3 primeras filas de la tabla "users"
