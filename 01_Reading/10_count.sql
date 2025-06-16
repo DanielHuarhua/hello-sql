@@ -1,6 +1,6 @@
 /*
 COUNT
-Lección 10.4: https://youtu.be/OuJerKzV5T0?t=8043
+Encuentra el total de elementos no nulos de un mismo atributo
 */
 
 -- Cuenta cuantas filas contiene la tabla "users"
