@@ -1,6 +1,7 @@
 /*
 AVG
-Lección 10.6: https://youtu.be/OuJerKzV5T0?t=8293
+Devuelve el valor promedio de una columna numerica
+SELECT AVG(atributo) FROM tabla;
 */
 
 -- Obitne la media de edad de la tabla "users"
