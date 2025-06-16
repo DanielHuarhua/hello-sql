@@ -1,6 +1,11 @@
 /*
 IN
-Lección 10.7: https://youtu.be/OuJerKzV5T0?t=8335
+Retorna los valores que coincida con una lista especificada, esta lista contiene 
+diferentes valores de un mismo atributo
+Simplifica el OR
+Usar operadores para condicionar atributos diferentes
+Usar IN para condicionar un mismo atributo
+SELECT carac1,carac2,.. FROM tabla WHERE atributo IN ('valor1','valor2','valor3',...)
 */
 
 -- Ordena todos los datos de la tabla "users" con nombre igual a brais y sara
