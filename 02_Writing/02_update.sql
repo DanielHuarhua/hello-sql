@@ -1,6 +1,9 @@
 /*
 UPDATE
-Lección 11.2: https://youtu.be/OuJerKzV5T0?t=10621
+Se utiliza para modificar registros existentes en la tabla
+Normalmente se debe utilizar un filtro Where para especificar que registro modificar,
+de lo contrario se actualizaran todos los registros
+UPDATE table SET carac1=value1,carac2=value2,... WHERE condition 
 */
 
 -- Estable el valor 21 para la edad del registro de la tabla "users" con identificador igual a 11
