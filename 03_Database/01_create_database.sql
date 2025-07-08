@@ -1,6 +1,7 @@
 /*
 CREATE DATABASE
-Lección 12.1: https://youtu.be/OuJerKzV5T0?t=11064
+Para crear una nueva base de datos en SQL
+CREATE DATABASE name_data;
 */
 
 -- Crea una base de datos llamada "test"
