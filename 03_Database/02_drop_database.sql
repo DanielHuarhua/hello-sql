@@ -1,6 +1,7 @@
 /*
 DROP DATABASE
-Lección 12.2: https://youtu.be/OuJerKzV5T0?t=11180
+Para eliminar una base de datos existente
+DROP DATABASE data_name
 */
 
 -- Elimina la base de datos llamada "test"
