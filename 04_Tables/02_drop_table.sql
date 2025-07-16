@@ -1,6 +1,7 @@
 /*
 DROP TABLE
-Lección 13.8: https://youtu.be/OuJerKzV5T0?t=12412
+Elimina completamente una tabla de la base de datos
+DROP TABLE name_table
 */
 
 -- Elimina la tabla llamada "persons8"
