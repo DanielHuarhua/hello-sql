@@ -1,12 +1,12 @@
 /*
 CREATE TABLE
-Lección 13.1: https://youtu.be/OuJerKzV5T0?t=11292
+Se utiliza para crear una nueva tabla en una base de datos
 */
 
 -- Crea una tabla llamada "persons" con nombre de columna (atributos) de tipo int, varchar y date
 CREATE TABLE persons (
-	id int,
-    name varchar(100),
+    id int,
+    name varchar(100), 
     age int,
     email varchar(50),
     created date
