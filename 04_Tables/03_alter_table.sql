@@ -1,40 +1,32 @@
 /*
 ALTER TABLE
-Lección 13.9: https://youtu.be/OuJerKzV5T0?t=12461
+Realiza modificaciones en las columnas de una tabla
 */
 
 /*
 ADD
-Lección 13.10: https://youtu.be/OuJerKzV5T0?t=12578
+Agrega nuevas columnas a una tabla existente
 */
-
--- ADD: Añade un nuevo atributo surname a la tabla "persons8"
 ALTER TABLE persons8
 ADD surname varchar(150);
 
 /*
 RENAME COLUMN
-Lección 13.11: https://youtu.be/OuJerKzV5T0?t=12624
+Cambia el nombre de la columna de una tabla existente
 */
-
--- RENAME COLUMN: Renombra el atributo surname a description en la tabla "persons8"
 ALTER TABLE persons8
-RENAME COLUMN surname TO description;
+RENAME COLUMN surname TO `Nombre de Columna`; -- Para usar nombres con espacios incluidos usar el simbolo ``
 
 /*
 MODIFY COLUMN
-Lección 13.12: https://youtu.be/OuJerKzV5T0?t=12675
+Modifica las caracteristicas existentes de una columna en una tabla
 */
-
--- MODIFY COLUMN: Modifica el tipo de dato del atributo description en la tabla "persons8"
 ALTER TABLE persons8
 MODIFY COLUMN description varchar(250);
 
 /*
 DROP COLUMN
-Lección 13.13: https://youtu.be/OuJerKzV5T0?t=12712
+Elimina una columna de una tabla existente
 */
-
--- DROP COLUMN: Elimina el atributo description en la tabla "persons8"
 ALTER TABLE persons8
 DROP COLUMN description;
