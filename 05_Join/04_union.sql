@@ -1,30 +1,30 @@
 /*
-UNION (FULL JOIN)
-Lección 17.4: https://youtu.be/OuJerKzV5T0?t=17536
+FULL JOIN
+Combina todas las filas de ambas tablas, sin importar que haya coindicencia o no. Donde no 
+hay coincidencia, los campos faltantes se llenan con NULL
+SELECT columna1,columna2,...
+FROM tabla1 (tabla izquierda)
+FULL JOIN tabla2 (tabla derecha)
+ON table1.key=table2.key;
+
+OJO: MSQL NO SOPORTA FULL JOIN, EN SU LUGAR SE USA LEFT JOIN + UNION + RIGHT JOIN
 */
-
--- UNION elimina duplicados
-
--- Obtiene todos los id de usuarios de las tablas dni y usuarios (exista o no relación)
-SELECT users.user_id AS u_user_id, dni.user_id AS d_user_id
-FROM users
-LEFT JOIN dni
-ON users.user_id = dni.user_id
+-----------------------------------------------------------------------------------------------------------
+/*
+UNION 
+Combina los resultados de dos o mas consultas en un solo conjunto de resultados
+SELECT columna1, columna2 FROM tabla1
 UNION
-SELECT users.user_id AS user_id, dni.user_id AS d_user_id
-FROM users
-RIGHT JOIN dni
-ON users.user_id = dni.user_id;
-
--- Obtiene todos los datos de las tablas dni y usuarios (exista o no relación)
-SELECT *
-FROM users
-LEFT JOIN dni
-ON users.user_id = dni.user_id
+SELECT columna1, columna2 FROM tabla2;
+- Mismo número de columnas en todas las consultas.
+- Tipos de datos compatibles en las columnas correspondientes.
+- Orden de columnas debe coincidir.
+UNION (elimina duplicados) UNION ALL (incluye duplicados)
+*/
+SELECT e.nombre AS empleado, d.nombre AS departamento
+FROM empleados e
+LEFT JOIN departamentos d ON e.departamento_id = d.id
 UNION
-SELECT *
-FROM users
-RIGHT JOIN dni
-ON users.user_id = dni.user_id;
-
--- UNION ALL mantiene duplicados
+SELECT e.nombre AS empleado, d.nombre AS departamento
+FROM empleados e
+RIGHT JOIN departamentos d ON e.departamento_id = d.id
