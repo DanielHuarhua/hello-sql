@@ -1,21 +1,15 @@
 /*
 RIGHT JOIN
-Lección 17.3: https://youtu.be/OuJerKzV5T0?t=17399
+Combina filas de dos tablas, pero incluye todas las filas de la tabla derecha (tabla2),
+Si no encuentra coincidencia con la tabla izquierda (tabla1) apareceran como NULL
+SELECT columna1,columna2,...
+FROM table1 (tabla izquierda)
+RIGHT JOIN table 2 (tabla derecha)
+ON table1.key=table2.key;
 */
-
--- Obtiene todos los dni junto a su usuario (lo tenga o no)
-SELECT * FROM users
-RIGHT JOIN dni
-ON users.user_id = dni.user_id;
-
--- Obtiene todos los dni junto al nombre de su usuario (lo tenga o no)
+-- Obtiene todos los dni junto al nombre de su usuario asociado (lo tenga o no un usuario asociado a ese DNI)
 SELECT name, dni_number FROM users
 RIGHT JOIN dni
-ON users.user_id = dni.user_id;
-
--- Obtiene el nombre de todos los usuarios junto a su dni (lo tenga o no)
-SELECT name, dni_number FROM dni
-RIGHT JOIN users
 ON users.user_id = dni.user_id;
 
 -- Obtiene el nombre de todos los lenguajes junto a sus usuarios (los tenga o no)
