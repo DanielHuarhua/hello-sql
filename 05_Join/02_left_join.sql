@@ -2,6 +2,10 @@
 LEFT JOIN
 Combina filas de dos tablas, pero incluye todas las filas de la tabla izquierda (tabla1),
 tengan o no coincidencias. Si no hay coincidencia en la tabla derecha (tabla2) aparecera como nulo
+SELECT  columna1,columna2,...
+FROM table1 (tabla izquierda)
+LEFT JOIN tabl2 (tabla derecha)
+ON table1.key=table2.key;
 */
 
 -- Obtiene el nombre de todos los usuarios junto a su dni (tengan un DNI asociado o no)
